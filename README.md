@@ -8,11 +8,11 @@ For more information and more details documentation, please visit https://botpre
 ### Downloading the toolkit
 Download botpress for your operating system from here: https://botpress.com/download and unzip the folder to a sensible location.
 
-Download the toolkit from here: https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/Parklife%20toolkit.tar.gz and unzip the folder to a sensible location.
+Download the toolkit from here: https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/Parklife%20toolkit.tar.gz and unzip the folder to a sensible location.
 
 Place the contents of the toolkit folder into the botpress folder. Your botpress folder should now look something like this:
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20folder.png "Botpress folder contents")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20folder.png "Botpress folder contents")
 
 **The contents**:
 
@@ -56,7 +56,7 @@ You will see text appearing displaying the startup of the chatbot. Botpress will
 * To stop botpress at any point, press ctrl+C or just close the terminal window.
 * In your web browser, navigate to `http://localhost:3000`. You will be shown a login window.
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20login.png "Botpress login window")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20login.png "Botpress login window")
 
 *Note that if you have anything already running on your machine that uses this port, botpress will attempt to use the next available one. This should be noted on the startup text.*
 
@@ -67,11 +67,11 @@ It will ask you to sign up. All you need to provide is an email and passsword. T
 ### Importing the chatbots
 To import the chatbot provided, click the dropdown `Create Bot` and select `Import Existing`.
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20import%20bot.png "Botpress import chatbot")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20import%20bot.png "Botpress import chatbot")
  
 The window you are given allows you to create the bot ID for the chatbot. This will be used as part of the web address the end users will visit when they use the bot. So this should be something succinct and meaningful.
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20botID%20and%20Name.png "botpress botID and Name")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20botID%20and%20Name.png "botpress botID and Name")
 
 
 Then select the bot archive. Choose the `Parklife Chatbot.tgz` to import.
@@ -81,14 +81,14 @@ Now selected ‘configure’ next to this newly imported bot.
 Here, you can change the Name of the bot, Description and More Details such as website and contact details.
 You can also change the Bot avatar, which will be displayed to end users, and the cover picture.
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20details.png "botpress details")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20details.png "botpress details")
 
 
 ### Starting a chat
 
 Click `Open Chat` next to any chatbot in the list to start a chat.
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20Open%20Chat.png "Botpress Open Chat")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20Open%20Chat.png "Botpress Open Chat")
 
 
 ## Editing the chatbot
@@ -101,7 +101,7 @@ Click on the name of any chatbot in the list. You will now see the construction 
 
 The chatbot is built as a flow diagram:
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20flow.png "Botpress import chatbot")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20flow.png "Botpress import chatbot")
 
 Each box (named a `node` by botpress) is where the chatbot will perform an action, such as asking a question.
 Once the action is complete, the chatbot moves to the linked box as illustrated by the black lines.
@@ -119,7 +119,7 @@ A `node` has 3 things it does:
 2. On Receive - Does it save user input
 3. Transitions - What node it goes to next
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20node.png "Botpress node")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20node.png "Botpress node")
 
 * An example of `On Enter` - Say some text
 * An example of `On Receive` - Wait for user input
@@ -127,7 +127,7 @@ A `node` has 3 things it does:
 
 ## Create a new question
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20nodes.png "Add a node")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20nodes.png "Add a node")
 
 
 ### Add a free text question
@@ -135,7 +135,7 @@ A `node` has 3 things it does:
 * Drag and drop `Node` under `Tools` on the left panel onto the flow diagram in an open space.
 * Make sure this new `node` is selected and press the plus button under the `On Enter` section and select `Text` > `Add new text` to add the question you want. Type it in and select`Save` and `Update node`.
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20add%20text.png "Add text")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20add%20text.png "Add text")
 
 
 ### Wait for user feedback
@@ -161,14 +161,14 @@ This is adding the link to the next question after this question is answered. Th
 * Now select `Save` and then `Insert`.
 * *`Wait for user feedback` and transition points are already created for you.*
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20add%20text.png "Add text")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20add%20text.png "Add text")
 
 
 ### Connect the new question
 
 Connect the question to a previous and next question in the flow by dragging the small square at the top of the node to the previous questions bottom.
 
-![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20node%20connection.png "Botpress node connection")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20node%20connection.png "Botpress node connection")
 
 ### Copy an existing question
 
