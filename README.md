@@ -49,7 +49,7 @@ This folder contains the chat bot images used in the Parklife project. It contai
 
 ### Starting up botpress
 Open a terminal window. (Alternatively named Console/Command prompt, depending on your operating system).
-Navigate to your botpress folder. (Type `cd` followed by the path to the botpress folder. e.g. `cd C:\botpress` in windows, or `cd /home/username/botpress` in linux or `cd /Applications/botpress` in MacOS.)
+Navigate to your botpress folder. (Type `cd` followed by the path to the botpress folder. e.g. `cd C:\botpress` in windows, or `cd /home/username/botpress` in Linux or `cd /Applications/botpress` in MacOS.)
 
 Type `./bp` to run botpress. (Alternatively just `bp`, again OS dependent)
 You will see text appearing displaying the startup of the chatbot. Botpress will now be up and running!
@@ -105,13 +105,13 @@ Click on a box (a `node`) to see its contents on the left panel of the page.
 
 A `node` has 3 things it does:
 1. On Enter - What it does immediately
-2. On Recieve - Does it save user input
+2. On Receive - Does it save user input
 3. Transitions - What node it goes to next
 
 ![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20node.png "Botpress node")
 
 * An example of `On Enter` - Say some text
-* An example of `On Recieve` - Wait for user input
+* An example of `On Receive` - Wait for user input
 * An example of `Transitions` - Go to next question
 
 ## Create a new question
@@ -120,12 +120,12 @@ A `node` has 3 things it does:
 ### Add a free text question
 
 * Drag and drop `Node` under `Tools` on the left panel onto the flow diagram in an open space.
-* Make sure this new `node` is selected and press the plus button under the `On Enter` srection and select `Text` > `Add new text` to add the question you want. Type it in and select`Save` and `Update node`.
+* Make sure this new `node` is selected and press the plus button under the `On Enter` section and select `Text` > `Add new text` to add the question you want. Type it in and select`Save` and `Update node`.
 
 ### Wait for user feedback
 
 * Select the node you created
-* Click on `On Recieve` on the left panel.
+* Click on `On Receive` on the left panel.
 * Tick the `Wait for user feedback` box.
 
 ### Add question transition
@@ -142,7 +142,7 @@ This is adding the link to the next question after this question is answered. Th
 * Drag and drop `Choice` under `Tools` on the left panel onto the flow diagram in an open space.
 * In the pop-up window, select the folder button, then `Create new single choice`. Now enter your question and the answers you want.
 * *The message and values for each choice are what is displayed to the user, and what will be saved to the database, respectively. These can be the same for simplicity.*
-* Now select`Save` and `Insert`.
+* Now select `Save` and then `Insert`.
 * *`Wait for user feedback` and transition points are already created for you.*
 
 ### Connect the new question
@@ -153,7 +153,7 @@ Connect the question to a previous and next question in the flow by dragging the
 
 ### Copy an existing question
 
-To make the question creation process easier, rightclick and copy an existing node then right click and paste. Edit as before.
+To make the question creation process easier, right click and copy an existing node then right click and paste. Edit as before.
 
 ## Change an existing question
 
@@ -164,7 +164,7 @@ To make the question creation process easier, rightclick and copy an existing no
 * Click `Submit` then `Update action` to update the wording.
 
 Some questions have information about the park following them.
-To change this, do the exact same as above, but change the text in the `On recieve` section.
+To change this, do the exact same as above, but change the text in the `On Receive` section.
 
 
 ## Using the chatbot on a remote server
