@@ -156,12 +156,13 @@ This is adding the link to the next question after this question is answered. Th
 ### Add a multiple choice question
 
 * Drag and drop `Choice` under `Tools` on the left panel onto the flow diagram in an open space.
-* In the pop-up window, select the folder button, then `Create new single choice`. Now enter your question and the answers you want.
+* In the pop-up window, select the folder button, then `Create new single choice`.
+* Now enter your question and the answers you want. Each answer has text and a value. Press the green plus button to add another possible answer.
 * *The message and values for each choice are what is displayed to the user, and what will be saved to the database, respectively. These can be the same for simplicity.*
 * Now select `Save` and then `Insert`.
 * *`Wait for user feedback` and transition points are already created for you.*
 
-![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20add%20text.png "Add text")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20add%20choice.png "Add choice")
 
 
 ### Connect the new question
