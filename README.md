@@ -18,6 +18,7 @@ Place the contents of the toolkit folder into the botpress folder. Your botpress
 
 * bindings folder
 * modules folder
+* data folder
 * bp / bp.exe
 
 These are included by default in the botpress download. They are used to run and manage the chatbot server.
@@ -70,17 +71,24 @@ To import the chatbot provided, click the dropdown `Create Bot` and select `Impo
  
 The window you are given allows you to create the bot ID for the chatbot. This will be used as part of the web address the end users will visit when they use the bot. So this should be something succinct and meaningful.
 
+![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20botID%20and%20Name.png "botpress botID and Name")
+
+
 Then select the bot archive. Choose the `Parklife Chatbot.tgz` to import.
 
 Once imported, the chatbot will appear in the bot list.
 Now selected ‘configure’ next to this newly imported bot.
 Here, you can change the Name of the bot, Description and More Details such as website and contact details.
-
 You can also change the Bot avatar, which will be displayed to end users, and the cover picture.
+
+![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20details.png "botpress details")
+
 
 ### Starting a chat
 
 Click `Open Chat` next to any chatbot in the list to start a chat.
+
+![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20Open%20Chat.png "Botpress Open Chat")
 
 
 ## Editing the chatbot
@@ -119,11 +127,16 @@ A `node` has 3 things it does:
 
 ## Create a new question
 
+![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20nodes.png "Add a node")
+
 
 ### Add a free text question
 
 * Drag and drop `Node` under `Tools` on the left panel onto the flow diagram in an open space.
 * Make sure this new `node` is selected and press the plus button under the `On Enter` section and select `Text` > `Add new text` to add the question you want. Type it in and select`Save` and `Update node`.
+
+![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20add%20text.png "Add text")
+
 
 ### Wait for user feedback
 
@@ -148,6 +161,9 @@ This is adding the link to the next question after this question is answered. Th
 * Now select `Save` and then `Insert`.
 * *`Wait for user feedback` and transition points are already created for you.*
 
+![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20add%20text.png "Add text")
+
+
 ### Connect the new question
 
 Connect the question to a previous and next question in the flow by dragging the small square at the top of the node to the previous questions bottom.
@@ -168,6 +184,11 @@ To make the question creation process easier, right click and copy an existing n
 
 Some questions have information about the park following them.
 To change this, do the exact same as above, but change the text in the `On Receive` section.
+
+### Add error handling
+
+If, on a multiple choice quesiton, the user types something in that isn't one of the options you can ask the question again.
+To do this, connect the `on error` Transition to either an error message `node`, then back to the question again. Or simply back to the question immediately to re-ask it.
 
 
 ## Using the chatbot on a remote server
