@@ -54,6 +54,8 @@ Navigate to your botpress folder. (Type `cd` followed by the path to the botpres
 Type `./bp` to run botpress. (Alternatively just `bp`, again OS dependent)
 You will see text appearing displaying the startup of the chatbot. Botpress will now be up and running!
 
+To stop botpress at any point, press ctrl+C or just close the terminal window.
+
 In your web browser, navigate to `http://localhost:3000`. You will be shown a login window.
 
 ![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20login.png "Botpress login window")
@@ -82,11 +84,18 @@ Here, you can change the Name of the bot, Description and More Details such as w
 
 You can also change the Bot avatar, which will be displayed to end users, and the cover picture.
 
+### Starting a chat
+
+Click `Open Chat` next to any chatbot in the list to start a chat.
+
+
 ## Editing the chatbot
 
 *I will only give basic instructions on changing and editing questions here, as you should consult the botpress documentation for more complex and detailed guidance and instructions.*
 
 ### Overview
+
+Click on the name of any chatbot in the list. You will now see the construction of the chatbot.
 
 The chatbot is built as a flow diagram:
 
@@ -161,7 +170,7 @@ To make the question creation process easier, right click and copy an existing n
 * Click on the `On Enter` section in ther left panel
 * Hover over the text and click `edit`.
 * Click the pencil icon to edit the text
-* Click `Submit` then `Update action` to update the wording.
+* Click `Submit` then `Update action` topm2 start './bp start -p' update the wording.
 
 Some questions have information about the park following them.
 To change this, do the exact same as above, but change the text in the `On Receive` section.
@@ -170,9 +179,15 @@ To change this, do the exact same as above, but change the text in the `On Recei
 ## Using the chatbot on a remote server
 If you intend on running this on a remote server, like the parklife chatbot which runs on the parklife website, you will need to connect to the remote server and upload your botpress folder to it.
 
-From the remote server, then run the bp file and botpress will be running on the remote machine the same way as it runs on your local machine.
+From the remote server, run `./bp` and botpress will be running on the remote machine the same way as it runs on your local machine.
 
-If connecting from a terminal window, this window must remain open for botpress to continue running. To have it run it the background, without needing this window open - refer here: 
+If connecting from a terminal window, this window must remain open for botpress to continue running. To have it run it the background, you will need to have nodejs and npm installed.
+
+* Install nodejs. Refer here for how to install it on your system: https://nodejs.org/
+* Install pm2. `sudo npm install -g pm2`
+* Now you can use the `pm2` `node module` to run and monitor botpress without keeping the window open. Use the command `pm2 start './bp start -p'` from within the botpress folder.
+* You can check the status of your botpress process by running `pm2 list`
+* You can stop botpress using `pm2 stop 'bp start -p`
 
 ## The database
 The SQLite database is one file, named `botpressDatabase.db` in the botpress folder.
@@ -180,6 +195,10 @@ The SQLite database is one file, named `botpressDatabase.db` in the botpress fol
 To read the database you need SQLite installed on your system, or at least software capable of reading SQLite databases.
 
 *The database is by default in SQLite. You can change to using PostGres as the database, but this is more advanced and you can refer to the botpress documentation on how to do so.*
+
+To read from the database, you can install any sqlite database reader tool. An example is sqliteBrowser https://sqlitebrowser.org/
+
+To query the database, install sqlite from here:
 
 ## The SQL script
 
