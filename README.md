@@ -198,7 +198,12 @@ To read the database you need SQLite installed on your system, or at least softw
 
 To read from the database, you can install any sqlite database reader tool. An example is sqliteBrowser https://sqlitebrowser.org/
 
-To query the database, install sqlite from here:
+* Install sqlite from here: https://www.sqlite.org/download.html. Select the version that is for your operating system and has `A bundle of command-line tools for managing SQLite database files...` in the description.
+* Once the correct version of sqlite is downloaded, extract it to a folder.
+* Open a terminal window and navigate to this foler
+* Enter `sqlite C:\botpress\botpressDatabase.db` in the terminal. Replacing the path with e=wherever you have put your database file.
+* You are now in sqlite and can now run queries on the database.
+
 
 ## The SQL script
 
