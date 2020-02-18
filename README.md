@@ -10,7 +10,7 @@ Download botpress for your operating system from here: https://botpress.com/down
 
 Download the toolkit from here: https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/Parklife%20toolkit.tar.gz and unzip the folder to a sensible location.
 
-Place the contents of the toolkit folder into the botpress folder. Your botpress folder should look something like this:
+Place the contents of the toolkit folder into the botpress folder. Your botpress folder should now look something like this:
 
 ![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20folder.png "Botpress folder contents")
 
@@ -48,15 +48,12 @@ This folder contains the chat bot images used in the Parklife project. It contai
 
 
 ### Starting up botpress
-Open a terminal window. (Alternatively named Console/Command prompt, depending on your operating system).
+* Open a terminal window. (Alternatively named Console/Command prompt, depending on your operating system).
 Navigate to your botpress folder. (Type `cd` followed by the path to the botpress folder. e.g. `cd C:\botpress` in windows, or `cd /home/username/botpress` in Linux or `cd /Applications/botpress` in MacOS.)
-
-Type `./bp` to run botpress. (Alternatively just `bp`, again OS dependent)
+* Type `./bp` to run botpress. (Alternatively just `bp` or `bp.exe`, again OS dependent)
 You will see text appearing displaying the startup of the chatbot. Botpress will now be up and running!
-
-To stop botpress at any point, press ctrl+C or just close the terminal window.
-
-In your web browser, navigate to `http://localhost:3000`. You will be shown a login window.
+* To stop botpress at any point, press ctrl+C or just close the terminal window.
+* In your web browser, navigate to `http://localhost:3000`. You will be shown a login window.
 
 ![alt text](https://github.com/jnewton3edinburgh/ParkLifeToolkit/raw/master/documentation%20images/botpress%20login.png "Botpress login window")
 
@@ -65,9 +62,6 @@ In your web browser, navigate to `http://localhost:3000`. You will be shown a lo
 It will ask you to sign up. All you need to provide is an email and passsword. These can be anything you choose as they are purely used for login security. Remember these credentials as you will need them again to log back in.
 
 ## Usage
-
-### Homepage
-Once you are logged in, you are provided with a list of bots, which should just display the test bot.
 
 ### Importing the chatbots
 To import the chatbot provided, click the dropdown `Create Bot` and select `Import Existing`.
@@ -207,4 +201,6 @@ To read from the database, you can install any sqlite database reader tool. An e
 
 ## The SQL script
 
-The `getCSV.sql` file included in the toolkit is a script to extract a list of questions and answers from the botpres database. This requires sqlite installed.
+The `getCSV.sql` file included in the toolkit is a script to extract a list of questions and answers from the botpress database.
+
+Run the contents of this script in sqlite to return a list of questions and answers.
