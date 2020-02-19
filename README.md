@@ -228,11 +228,11 @@ To read from the database, you can install any sqlite database reader tool. An e
 
 ## Visualisations
 
-Using the data from that database, you can make useful visualisations from the data you collect for users using the chatbot.
+You can make useful visualisations from the data you collect for users.
 
 ### Obtaining data
 
-The `getCSV.sql` file included in the toolkit is a script to extract a list of questions and answers from the botpress database. Use this script to extract a list of questions and answers from the database in CSV format. You have two options for creating this file:
+The `getCSV.sql` file included in the toolkit is a script to extract a list of questions and answers from the botpress database. Use this script to extract a list of questions and answers from the database in CSV format. You have two options for doing this:
  
 #### Option 1
 
@@ -242,6 +242,8 @@ This option uses sqlite's inbuilt functions to create a CSV file from a query.
 2. Run `sqlite`
 3. Now in sqlite, run the command `.mode csv`
 4. Run the command `.output myFile.csv`
+5. Run you query. This can be as simple as `SELECT * FROM EVENTS` or more complex, such as the contents of the `getCSV.sql` file.
+6. This should have created the `myfile.csv` file with the data in your current directory.
 
 #### Option 2
 
@@ -250,10 +252,8 @@ If this method does not work for you, you may not have the latest version of sql
 1. Open a terminal window
 2. Run `sqlite`
 3. Now in sqlite, run the command `"SELECT * FROM events;" > myFile.txt`
-4. If this created you `myFile.txt`, you can run this command: `"SELECT json_extract(event, '$.botId') || ',' || json_extract(* Note that there is a difference between starting and stopping teh service. 
- direction = 'incoming' and json_extract(event, '$.state.context.previousNode') like '%question%';" > myFile.txt`
-
-This command is the contents of the `getCSV.sql` file, and writes teh results directly to the file you named.
+4. This should have created the `myfile.csv` file with the data in your current directory.
+5. Now run your own query, or use the contents of the `getCSV.sql` file
 
 You will now have a CSV of questions and answers that you can use in visualisations.
 
@@ -266,7 +266,7 @@ If you are familiar with Excel, you can use this data to immediately start creat
 
 * Select the data you want to visualise (Drag over all the cells of data, including field names.)
 * Select insert > Pivot table
-* Select the columns you want to use (Both Question and Answer)
+* Select the columns you want to use (BotID, Question and Answer)
 * Select the metrics you want to use to visualise the data
 
 #### Chart
