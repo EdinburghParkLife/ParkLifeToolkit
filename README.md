@@ -200,10 +200,15 @@ From the remote server, run `./bp` and botpress will be running on the remote ma
 If connecting from a terminal window, this window must remain open for botpress to continue running. To have it run it the background, you will need to have nodejs and npm installed.
 
 * Install nodejs. Refer here for how to install it on your system: https://nodejs.org/
-* Install pm2. `sudo npm install -g pm2`
-* Now you can use the `pm2` `node module` to run and monitor botpress without keeping the window open. Use the command `pm2 start './bp start -p'` from within the botpress folder.
+* Install pm2. `sudo npm install -g pm2`. Now you can use the `pm2` `node module` to run and monitor botpress without keeping the window open.
+* Use the command `pm2 start 'bp start -p'` from within the botpress folder. You may need to use a varient of `bp`, `./bp`, `bp.exe` etc, OS dependent.
 * You can check the status of your botpress process by running `pm2 list`
 * You can stop botpress using `pm2 stop 'bp start -p`
+
+## Chatbot example
+
+The Parklife project has multiple chatbots for parks in and around Edinburgh. One such chatbot is at The Meadows park. This chatbot is accessed from this link: [Link currently unavailable].
+You can visit think chatbot to see it in action. The aim of this chatbot is to collect data from people who visit the park. It is also the chatbot that is provided as an example in this toolkit.
 
 ## The database
 The SQLite database is one file, named `botpressDatabase.db` in the botpress folder.
@@ -221,8 +226,61 @@ To read from the database, you can install any sqlite database reader tool. An e
 * You are now in sqlite and can now run queries on the database.
 
 
-## The SQL script
+## Visualisations
 
-The `getCSV.sql` file included in the toolkit is a script to extract a list of questions and answers from the botpress database.
+Using the data from that database, you can make useful visualisations from the data you collect for users using the chatbot.
 
-Run the contents of this script in sqlite to return a list of questions and answers.
+### Obtaining data
+
+The `getCSV.sql` file included in the toolkit is a script to extract a list of questions and answers from the botpress database. Use this script to extract a list of questions and answers from the database in CSV format. You have two options for creating this file:
+ 
+#### Option 1
+
+This option uses sqlite's inbuilt functions to create a CSV file from a query.
+
+1. Open a terminal window
+2. Run `sqlite`
+3. Now in sqlite, run the command `.mode csv`
+4. Run the command `.output myFile.csv`
+
+#### Option 2
+
+If this method does not work for you, you may not have the latest version of sqlite installed. If not, try this method:
+
+1. Open a terminal window
+2. Run `sqlite`
+3. Now in sqlite, run the command `"SELECT * FROM events;" > myFile.txt`
+4. If this created you `myFile.txt`, you can run this command: `"SELECT json_extract(event, '$.botId') || ',' || json_extract(* Note that there is a difference between starting and stopping teh service. 
+ direction = 'incoming' and json_extract(event, '$.state.context.previousNode') like '%question%';" > myFile.txt`
+
+This command is the contents of the `getCSV.sql` file, and writes teh results directly to the file you named.
+
+You will now have a CSV of questions and answers that you can use in visualisations.
+
+### Excel
+
+You can open the CSV file directly in excel to view the data.
+If you are familiar with Excel, you can use this data to immediately start creating tables visualising it.
+
+#### Pivot table
+
+* Select the data you want to visualise (Drag over all the cells of data, including field names.)
+* Select insert > Pivot table
+* Select the columns you want to use (Both Question and Answer)
+* Select the metrics you want to use to visualise the data
+
+#### Chart
+
+* Select the data you want to visualise (Drag over all the cells of data, including field names.)
+* Select insert > chart (Be it pie chart, bar chart etc)
+* Alter the details of the chart(s) to your liking.
+
+### Word cloud
+
+You can use this CSV file and import it into software such as Wordle to create Word Clouds.
+
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/wordle%20wordcloud.png "Wordcloud")
+
+The word cloud above is an example made in Wordle, displaying the most used words in a provided dataset. This could also be narrowed down to the most used words for specific questions.
+
+Kibana is the front end for viusalising data from the Parklife Chatbots. This too provides a tool for creating word clouds.
