@@ -207,8 +207,11 @@ If connecting from a terminal window, this window must remain open for botpress 
 
 ## Chatbot example
 
-The Parklife project has multiple chatbots for parks in and around Edinburgh. One such chatbot is at The Meadows park. This chatbot is accessed from this link: [Link currently unavailable].
-You can visit think chatbot to see it in action. The aim of this chatbot is to collect data from people who visit the park. It is also the chatbot that is provided as an example in this toolkit.
+The Parklife project has multiple chatbots for parks in and around Edinburgh. One such chatbot is at The Meadows park.
+
+This chatbot can be accessed from this link: [Link currently unavailable].
+
+You can visit this chatbot to see it in action. The aim of this chatbot is to collect data from people who visit the park. It is also the chatbot that is provided as an example in this toolkit.
 
 ## The database
 The SQLite database is one file, named `botpressDatabase.db` in the botpress folder.
@@ -255,7 +258,7 @@ If this method does not work for you, you may not have the latest version of sql
 4. This should have created the `myfile.csv` file with the data in your current directory.
 5. Now run your own query, or use the contents of the `getCSV.sql` file
 
-You will now have a CSV of questions and answers that you can use in visualisations.
+You will now have a CSV of questions ahttps://youtu.be/0s7als-OFZgnd answers that you can use in visualisations.
 
 ### Excel
 
