@@ -279,7 +279,7 @@ If you are familiar with Excel, you can use this data to immediately start creat
 
 You can use this CSV file and import it into software such as Wordle to create Word Clouds.
 
-![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/wordle%20wordcloud.png "Wordcloud")
+![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/wordle%20word%20cloud.png "Wordcloud")
 
 The word cloud above is an example made in Wordle, displaying the most used words in a provided dataset. This could also be narrowed down to the most used words for specific questions.
 
