@@ -258,7 +258,7 @@ If this method does not work for you, you may not have the latest version of sql
 4. This should have created the `myfile.csv` file with the data in your current directory.
 5. Now run your own query, or use the contents of the `getCSV.sql` file
 
-You will now have a CSV of questions ahttps://youtu.be/0s7als-OFZgnd answers that you can use in visualisations.
+You will now have a CSV of questions and answers that you can use in visualisations.
 
 ### Excel
 
