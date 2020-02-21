@@ -178,7 +178,7 @@ To make the question creation process easier, right click and copy an existing n
 ## Change an existing question
 
 * Click on a question
-* Click on the `On Enter` section in ther left panel
+* Click on the `On Enter` section on the left panel
 * Hover over the text and click `edit`.
 * Click the pencil icon to edit the text
 * Click `Submit` then `Update action` topm2 start './bp start -p' update the wording.
@@ -188,7 +188,7 @@ To change this, do the exact same as above, but change the text in the `On Recei
 
 ### Add error handling
 
-If, on a multiple choice quesiton, the user types something in that isn't one of the options you can ask the question again.
+If, on a multiple choice question, the user types something in that isn't one of the options you can ask the question again.
 To do this, connect the `on error` Transition to either an error message `node`, then back to the question again. Or simply back to the question immediately to re-ask it.
 
 
@@ -201,7 +201,7 @@ If connecting from a terminal window, this window must remain open for botpress 
 
 * Install nodejs. Refer here for how to install it on your system: https://nodejs.org/
 * Install pm2. `sudo npm install -g pm2`. Now you can use the `pm2` `node module` to run and monitor botpress without keeping the window open.
-* Use the command `pm2 start 'bp start -p'` from within the botpress folder. You may need to use a varient of `bp`, `./bp`, `bp.exe` etc, OS dependent.
+* Use the command `pm2 start 'bp start -p'` from within the botpress folder. You may need to use a variant of `bp`, `./bp`, `bp.exe` etc, OS dependent.
 * You can check the status of your botpress process by running `pm2 list`
 * You can stop botpress using `pm2 stop 'bp start -p`
 
@@ -219,6 +219,8 @@ The SQLite database is one file, named `botpressDatabase.db` in the botpress fol
 To read the database you need SQLite installed on your system, or at least software capable of reading SQLite databases.
 
 *The database is by default in SQLite. You can change to using PostGres as the database, but this is more advanced and you can refer to the botpress documentation on how to do so.*
+
+To check if you already have sqlite installed, run `sqlite` in your terminal window. If the prompt changes to say `sqlite` then you do, else it will say that the command is not recognised in which case you do not have it installed.
 
 To read from the database, you can install any sqlite database reader tool. An example is sqliteBrowser https://sqlitebrowser.org/
 
@@ -286,4 +288,4 @@ You can use this CSV file and import it into software such as Wordle to create W
 
 The word cloud above is an example made in Wordle, displaying the most used words in a provided dataset. This could also be narrowed down to the most used words for specific questions.
 
-Kibana is the front end for viusalising data from the Parklife Chatbots. This too provides a tool for creating word clouds.
+Kibana is the front end for visualising data from the Parklife Chatbots. This too provides a tool for creating word clouds.
