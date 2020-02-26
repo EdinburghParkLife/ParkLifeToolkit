@@ -13,7 +13,7 @@ Follow these steps to create and use your own ChatBot:
 
 * [Importing the example ChatBot](Importing%20the%20ChatBots.md)
 
-* [Editing and creating your own ChatBot](Editing%20and%20Creating%20a%20ChatBot)
+* [Editing and creating your own ChatBot](Editing%20and%20Creating%20a%20ChatBot.md)
 
 ## ChatBot example
 
