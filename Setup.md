@@ -30,15 +30,15 @@ This is the environment file that points the ChatBot at the database it should u
 
 * getCSV.sql
 
-This is an sqlite script to extract a list of questions and answers in CSV format from the database.
+This is an sqlite script, provided by the toolkit, to extract a list of questions and answers in CSV format from the database.
 
 * ParklifeChatBot.tgz
 
-This is the parklife ChatBot. It has been provided so that it can be imported into a new instance of botpress and immediately used.
+This is the parklife ChatBot, provided by the toolkit. It has been provided so that it can be imported into a new instance of botpress and immediately used.
 
 * images folder
 
-This folder contains the chat bot images used in the Parklife project. It contains an image of Alfred the owl, used as the ChatBot image, and backgrounds of four parks.
+This folder, provided by the toolkit, contains the ChatBot images used in the Parklife project. It contains an image of Alfred the owl, used as the ChatBot image, and backgrounds of four parks.
 
 *Do not worry if you are missing the `data` folder, as this is not included in the Windows download.*
 

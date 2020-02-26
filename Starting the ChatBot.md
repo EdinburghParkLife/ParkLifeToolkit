@@ -1,7 +1,7 @@
 ### Starting up botpress
 
 * Open a terminal window. (Alternatively named Console/Command prompt, depending on your operating system).
-Navigate to your botpress folder. (Type `cd` followed by the path to the botpress folder. e.g. `cd C:\botpress` in windows, or `cd /home/username/botpress` in Linux or `cd /Applications/botpress` in MacOS.)
+Navigate to your botpress folder. (Type `cd` followed by the path to the botpress folder. e.g. `cd C:\botpress` in windows, or `cd /home/username/botpress` in Linux or `cd /Applications/botpress` in MacOS. This of course depends on what you named the folder, and the location of it.)
 * Type `./bp` to run botpress. (Alternatively just `bp` or `bp.exe`, again OS dependent)
 You will see text appearing displaying the startup of the ChatBot. Botpress will now be up and running!
 * To stop botpress at any point, press ctrl+C or just close the terminal window.

@@ -4,7 +4,7 @@ To import the ChatBot provided, click the dropdown `Create Bot` and select `Impo
 
 ![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20import%20bot.png "Botpress import ChatBot")
  
-The window you are given allows you to create the bot ID for the ChatBot. This will be used as part of the web address the end users will visit when they use the bot. So this should be something succinct and meaningful.
+The window you are given allows you to create the Bot ID for the ChatBot. This will be used as part of the web address the end users will visit when they use the bot. So this should be something succinct and meaningful.
 
 ![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20botID%20and%20Name.png "botpress botID and Name")
 
@@ -24,3 +24,8 @@ You can also change the Bot avatar, which will be displayed to end users, and th
 Click `Open Chat` next to any ChatBot in the list to start a chat.
 
 ![alt text](https://github.com/EdinburghParkLife/ParkLifeToolkit/raw/master/documentation%20images/botpress%20Open%20Chat.png "Botpress Open Chat")
+
+You can now interact with the pre-built ChatBot and see it in action!
+
+Responses you provide will all be added to the database as the conversation progresses.
+Accessing this data will be explained in the `Accessing and using the ChatBot DataBase` section. 
